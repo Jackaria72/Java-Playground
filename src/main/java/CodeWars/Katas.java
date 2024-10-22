@@ -14,6 +14,6 @@ public class Katas {
      Complete the solution so that it reverses the string passed into it.
       */
     public static String RSSolution(String str) {
-        return "";
+        return new StringBuilder(str).reverse().toString();
     }
 }
