@@ -9,4 +9,11 @@ public class Katas {
      public static boolean SEWSolution(String str, String ending) {
          return str.endsWith(ending);
      }
+
+     /* REVERSED STRINGS
+     Complete the solution so that it reverses the string passed into it.
+      */
+    public static String RSSolution(String str) {
+        return new StringBuilder(str).reverse().toString();
+    }
 }
