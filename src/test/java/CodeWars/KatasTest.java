@@ -29,4 +29,19 @@ class KatasTest {
                 () -> assertFalse(Katas.SEWSolution("abc\n", "abc"))
         );
     }
+    @Test
+    void revesedStringsKataTest() {
+        String string1;
+        String expected1 = "dlrow";
+        String string2;
+        String expected2 = "woc";
+
+        string1 = Katas.RSSolution("world");
+        string2 = Katas.RSSolution("cow");
+
+        assertAll(
+                () -> assertEquals(expected1, string1),
+                () -> assertEquals(expected2, string2)
+        );
+    }
 }
