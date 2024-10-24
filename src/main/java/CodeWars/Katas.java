@@ -22,6 +22,14 @@ public class Katas {
         The input string will only consist of lower case letters and/or spaces.
      */
     public static int VCSolution(String str) {
-        return 0;
+        int vowelCount = 0;
+        for (int i = 0; i < str.length(); i++) {
+            if (str.charAt(i) == 'a' || str.charAt(i) == 'e' ||
+                    str.charAt(i) == 'i' || str.charAt(i) == 'o' || str.charAt(i) == 'u') {
+                vowelCount ++;
+            }
+        }
+
+        return vowelCount;
     }
 }
