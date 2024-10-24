@@ -44,6 +44,7 @@ class KatasTest {
                 () -> assertEquals(expected2, string2)
         );
     }
+    @Test
     public void testVowelCountKata() {
         assertEquals(5, Katas.VCSolution("abracadabra"));
         assertEquals(0, Katas.VCSolution(""));
