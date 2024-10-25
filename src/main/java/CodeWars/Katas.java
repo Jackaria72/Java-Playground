@@ -1,5 +1,7 @@
 package CodeWars;
 
+import java.util.ArrayList;
+
 public class Katas {
 
 
@@ -38,7 +40,12 @@ public class Katas {
         Return the results as an array or list ( depending on language ).
      */
     public static int[] countByKataSolution(int x, int n) {
-        return null;
+        int[] results = new int[n];
+
+        for (int i = 0; i < n; i++) {
+            results[i] = x * (i + 1);
+        }
+        return results;
     }
 
 
