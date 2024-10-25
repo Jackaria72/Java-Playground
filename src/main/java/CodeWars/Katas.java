@@ -1,5 +1,7 @@
 package CodeWars;
 
+import java.util.ArrayList;
+
 public class Katas {
 
 
@@ -32,4 +34,19 @@ public class Katas {
 
         return vowelCount;
     }
+    /* Count by X - https://www.codewars.com/kata/5513795bd3fafb56c200049e/train/java
+        Create a function with two arguments that will return an array of the first n multiples of x.
+        Assume both the given number and the number of times to count will be positive numbers greater than 0.
+        Return the results as an array or list ( depending on language ).
+     */
+    public static int[] countByKataSolution(int x, int n) {
+        int[] results = new int[n];
+
+        for (int i = 0; i < n; i++) {
+            results[i] = x * (i + 1);
+        }
+        return results;
+    }
+
+
 }
